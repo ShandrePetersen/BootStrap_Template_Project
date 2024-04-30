@@ -21,6 +21,6 @@ app_name = "MyPortfolio"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('MyPortfolio.urls', namespace="MyPortfolio")),
+    path('', include('MyPortfolio.urls')),
     path("__debug__/", include("debug_toolbar.urls"))
 ]
